@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: #f3f3f3;
+  color: #f3f3f3;
+  text-align: center;
+  scroll-padding-top: 44px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+}
+
+#welcome-section {
+  background: linear-gradient(-45deg, #de354c, #932432, #3c1874, #283747);
+  animation: gradient 15s ease infinite;
+  background-size: 400%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#projects {
+  color: #3c1874;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+/* Add padding between each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that float next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-tile {
+  background-color: #de354c;
+  border-radius: 5px;
+  color: #f3f3f3;
+}
+
+.project-tile p {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #283747;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+#navbar li {
+  float: left;
+  border-right: 1px solid #f3f3f3;
+}
+
+#navbar li a {
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #de354c;
+}
+
+#navbar li:last-child {
+  float: right;
+  border-right: none;
+}
+
+#profile {
+  overflow: hidden;
+  background-color: #283747;
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+
+#profile li {
+  display: inline-block;
+  margin: 0;
+}
+
+#profile li a {
+  display: inline-block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#profile li a:hover {
+  background-color: #de354c;
+}
+
+#profile li:last-child {
+  border-right: none;
+}
+
+#profile p {
+  padding: 10px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+/* Responsive layout - a two column-layout instead of four columns */
+@media screen and (max-width: 1119px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  html {
+    scroll-padding-top: 75px;
+  }
+
+  #navbar li:last-child,
+  #navbar li {
+    float: none;
+    border-bottom: 1px solid #f3f3f3;
+    border-right: none;
+  }
+
+  #navbar li a {
+    padding: 4px 6px;
+  }
+
+  #profile li {
+    display: block;
+  }
+}
