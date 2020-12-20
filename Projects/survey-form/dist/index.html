@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id="main">
+  <header>
+    <h1 id="title">Ultimate Chocolate Cake</h1>
+    <p id="description">Help us create the world's best chocolate cake!</p>
+  </header>
+  
+     <form id="survey-form">
+       
+  <div>
+    <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+    
+  <div>
+    <label for="email" id="email-label">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+    
+  <div>
+    <label for="number" id="number-label">Age <small>(optional)</small></label>
+      <input type="number" id="number" name="number" min="1" max="100" placeholder="Age">
+   </div>
+  
+   <div>
+    <label for="dropdown">Location</label>
+      <select name="dropdown" id="dropdown">
+        <option disabled selected value>Select location</option>
+        <option value="asia">Asia</option>
+        <option value="africa">Africa</option>
+        <option value="europe">Europe</option>
+        <option value="northamerica">North America</option>
+        <option value="southamerica">South America</option>
+        <option value="oceania">Australia/Oceania</option>
+      </select>
+   </div>
+    
+   <div> 
+     <p>Select chocolate type</p>
+    <label class="container">
+      <input type="radio" name="chocotype" value="milk">
+      Milk
+    </label>
+    <label class="container">
+      <input type="radio" name="chocotype" value="dark">
+      Dark
+    </label>
+    <label class="container">
+      <input type="radio" name="chocotype" value="other">
+      Other
+    </label>
+   </div>
+    
+   <div> 
+    <p>What would you like to add to the cake?</p>
+    <label class="container">
+      <input type="checkbox" name="preference1" value="chocolatechips">
+      Chocolate chips
+    </label>
+    <label class="container">
+      <input type="checkbox" name="preference2" value="orangezest">
+      Orange zest
+      </label>
+    <label class="container">
+      <input type="checkbox" name="preference3" value="marshmallows">
+      Marshmallows
+      </label>
+   </div>
+   
+   <div>
+    <p>Type additional suggestions</p>
+      <textarea name="comments" placeholder="Insert additional comments here..."></textarea>
+   </div>
+
+   <div> 
+    <input type="submit" value="Submit" id="submit">
+   </div>
+  </form>
+  <footer id="footer">
+   <p>Made by <a href="https://codepen.io/ktoodo" target="_blank">ktoodo</a></p>
+  </footer>   
+</main>
+<!-- partial -->
+  
+</body>
+</html>
