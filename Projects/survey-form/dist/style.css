@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#main {
+  text-align: center;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-image: url("https://images.unsplash.com/photo-1536614984430-64652c3ad956?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#title {
+  font-size: 3rem;
+  }
+#description {
+  font-size: 2rem;
+  }
+#survey-form {
+  background: rgba(120, 120, 120, 0.5);
+  max-width: 700px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: left;
+  padding: 25px;
+  border: 2px solid gray;
+  font-size: 1.3rem;
+}
+
+/*
+
+#name-label {
+  }
+#name {
+  }
+#email-label {
+ }
+#email {
+  }
+#number-label {
+  }
+#number {
+  }
+#dropdown{
+  }
+
+*/
+
+
+#submit {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+
+#footer {
+  padding: 10px 0px 30px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+
+input[type=text], input[type=email], input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+small {
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+
+p {
+  margin: 10px 0px 5px;
+}

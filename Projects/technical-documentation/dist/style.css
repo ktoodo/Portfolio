@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: DarkGray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 1;
+}
+
+#main-doc {
+  margin-left: 25%;
+}
+
+.main-section {
+}
+
+code {
+    background-color: #f0f0f5;
+    border-radius: 3px;
+    color: blue;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    counter-increment: line;
+    
+}
+
+pre {
+  counter-reset: line;
+}
+
+pre code:before{
+  content: counter(line) " | ";
+}
+
+
+#navbar {
+  height: 100vh; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  width: 23%;
+  background-color: DimGray;
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  border-right: 1px solid black;
+  }
+
+
+.nav-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  padding: 1px 10px;
+  border-top: 1px solid black;
+  }
+
+ul:last-child {
+  border-bottom: 0.1px solid black;
+  }
+
+#navbar ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li a:hover {
+  background-color: #555;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+section {
+  padding: 5px;
+}
+
+p {
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+ #navbar {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  position: absolute;
+  border-right: none;
+  }
+  
+ #main-doc {
+  padding-top: 110px;
+  margin-left: 2%;
+  }
+}

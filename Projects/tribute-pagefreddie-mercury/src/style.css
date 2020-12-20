@@ -1,0 +1,59 @@
+#main {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 60px;
+  background: #f0f0f5;
+  }
+#title {
+  text-align: center;
+  font-size: 2rem;
+  }
+
+#img-div {
+  background-color: #e0e0eb;
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+#image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+#img-caption {
+  color: black;
+  line-height: 25px;
+  font-size: 0.69rem;
+  }
+#tribute-info {
+ }
+#tribute-link {
+  font-size: 0.75rem;
+    }
+#list {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  text-align: left;
+  font-size: 0.9rem;
+  }
+#footer {
+  padding: 5px;
+  font-size: 0.7rem;
+}
+blockquote {
+  font-style: italic;
+  margin: auto;
+  padding: 1px 0px 15px;
+}
+p {
+  font-size: 0.9rem;
+}
+h2 {
+  font-size: 1.3rem;
+}

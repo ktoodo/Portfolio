@@ -1,0 +1,166 @@
+<nav id="navbar">
+  <ul>
+    <header>
+      <h3>JavaScript Basics</h3>
+    </header>
+    <li><a href="#What_is_JavaScript?" class="nav-link">What is JavaScript?</a></li>
+    <li><a href="#A_Hello_world!_example" class="nav-link">A Hello world! example</a></li>
+    <li><a href="#Language_basics_crash_course" class="nav-link">Language basics crash course</a></li>
+    <ul>
+      <li><a href="#Variables" class="nav-link">Variables</a></li>
+      <li><a href="#Comments" class="nav-link">Comments</a></li>
+      <li><a href="#Operators" class="nav-link">Operators</a></li>
+      <li><a href="#Conditionals" class="nav-link">Conditionals</a></li>
+      <li><a href="#Functions" class="nav-link">Functions</a></li>
+      <li><a href="#Events" class="nav-link">Events</a></li>
+    </ul>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="What_is_JavaScript?">
+    <header>
+      <h2>What is JavaScript?</h2>
+    </header>
+    <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).</p>
+
+    <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+
+    <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+
+    <ul>
+      <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+      <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
+      <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+    </ul>
+
+    <p>The section below introduces some aspects of the core language and offers an opportunity to play with a few browser API features too. Have fun!</p>
+
+  </section>
+  <section class="main-section" id="A_Hello_world!_example">
+    <header>
+      <h2>A Hello world! example</h2>
+    </header>
+    <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
+    <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the standard for introductory programming examples.)</p>
+
+    <ol type="1">
+      <li>Go to your test site and create a new folder named <code>scripts</code>. Within the scripts folder, create a new file called main.js, and save it.</li>
+      <li>In your index.html file, enter this code on a new line, just before the closing <code> &lt;/body&gt;</code> tag:</li>
+      <code class="code-box">
+        &lt;script src="scripts/main.js"&gt;&lt;/script&gt;
+      </code>
+      <li>
+        This is doing the same job as the <code> &lt;link&gt;</code> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
+      <li>Add this code to the <code>main.js</code> file:
+      </li>
+      <pre>
+ <code class="code-box">const myHeading = document.querySelector('h1');</code>
+ <code>myHeading.textContent = 'Hello world!';</code></pre>
+      <li>Make sure the HTML and JavaScript files are saved. Then load <code>index.html</code> in your browser. You should see something like this:</li>
+      <img src="https://mdn.mozillademos.org/files/9543/hello-world.png" alt="Sample image">
+      </ol>
+      <h4>What happened?</h4>
+      <p>The heading text changed to Hello world! using JavaScript. You did this by using a function called <code>querySelector()</code> to grab a reference to your heading, and then store it in a variable called <code>myHeading</code>. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.</p>
+      <p>Following that, the code set the value of the <code>myHeading</code> variable's <code>textContent</code> property (which represents the content of the heading) to Hello world!.</p>
+    
+  </section>
+  <section class="main-section" id="Language_basics_crash_course">
+    <header>
+      <h2>Language basics crash course</h2>
+    </header>
+    <p>To give you a better understanding of how JavaScript works, let's explain some of the core features of the language. It's worth noting that these features are common to all programming languages. If you master these fundamentals, you have a head start on coding in other languages too!</p>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>
+      <h2>Variables</h2>
+    </header>
+    <p>Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable:</p>
+    <code class="code-box">let myVariable;</code>
+    <p>After declaring a variable, you can give it a value:</p>
+    <code class="code-box">myVariable = 'Bob';</code>
+    <p>Also, you can do both these operations on the same line:</p>
+    <code class="code-box">let myVariable = 'Bob';</code>
+    <p>You retrieve the value by calling the variable name:</p>
+    <code class="code-box">myVariable;</code>
+    <p>After assigning a value to a variable, you can change it later in the code:</p>
+    <pre>
+ <code class="code-box">let myVariable = 'Bob';</code>
+ <code>myVariable = 'Steve';</code></pre>
+  </section>
+  <section class="main-section" id="Comments">
+    <header>
+      <h2>Comments</h2>
+    </header>
+    <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+    <pre>
+ <code class="code-box">/*</code>
+ <code>Everything in between is a comment.</code>
+ <code>*/</code></pre>
+    <p>If your comment contains no line breaks, it's an option to put it behind two slashes like this:</p>
+    <code class="code-box">// This is a comment</code>
+  </section>
+  <section class="main-section" id="Operators">
+    <header>
+      <h2>Operators</h2>
+    </header>
+    <p>An operator is a mathematical symbol that produces a result based on two values (or variables).</p>
+  </section>
+  <section class="main-section" id="Conditionals">
+    <header>
+      <h2>Conditionals</h2>
+    </header>
+    <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if ... else statement. For example:</p>
+    <pre>
+ <code class="code-box">let iceCream = 'chocolate';</code>
+ <code>if(iceCream === 'chocolate') {</code>
+ <code> alert('Yay, I love chocolate ice cream!');</code>    
+ <code>} else {</code>
+ <code>alert('Awwww, but chocolate is my favorite...');</code>
+ <code>}</code></pre>
+    <p>The expression inside the <code>if( ... )</code> is the test. This uses the identity operator (as described above) to compare the variable <code>iceCream</code> with the string <code>chocolate</code> to see if the two are equal. If this comparison returns <code>true</code>, the first block of code runs. If the comparison is not true, the second block of code—after the <code>else</code> statement—runs instead.</p>
+  </section>
+  <section class="main-section" id="Functions">
+    <header>
+      <h2>Functions</h2>
+    </header>
+    <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions previously. For example:</p>
+    <code class="code-box">let myVariable = document.querySelector('h1');</code>
+    <code class="code-box">alert('hello!');</code>
+    <p>These functions, document.querySelector and alert, are built into the browser.</p>
+
+    <p>If you see something which looks like a variable name, but it's followed by parentheses— () —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.</p>
+
+    <p>For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.</p>
+
+    <p>You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:</p>
+    <pre>
+ <code class="code-box">function multiply(num1,num2) {</code>
+ <code>let result = num1 * num2;</code>
+ <code>return result;</code>
+ <code>}</code></pre>
+    <p>Try running this in the console; then test with several arguments. For example:</p>
+    <pre>
+ <code class="code-box">multiply(4, 7);</code>
+ <code>multiply(20, 20);</code>
+ <code>multiply(0.5, 3);</code>
+    </pre>
+  </section>
+  <section class="main-section" id="Events">
+    <header>
+      <h2>Events</h2>
+    </header>
+    <p>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:</p>
+    <pre>
+ <code class="code-box">document.querySelector('html').onclick = function() {</code>
+ <code>alert('Ouch! Stop poking me!');</code>
+ <code>}</code></pre>
+    <p>There are many ways to attach an event handler to an element. Here we select the <code>&lt;html&gt;</code> element, setting its onclick handler property equal to an anonymous (i.e. nameless) function, which contains the code we want the click event to run.</p>
+    <p>Note that</p>
+    <code class="code-box">document.querySelector('html').onclick = function() {};</code>
+    <p>is equivalent to</p><pre>
+ <code>let myHTML = document.querySelector('html');</code>
+ <code>myHTML.onclick = function() {};</code></pre>
+    <p>It's just shorter.</p>
+  </section>
+</main>
