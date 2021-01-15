@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  padding-top: 50px;
+}
+
+
+#about p {
+  margin: 4vw;
+}
+
+#home {
+  height: 100vh;
+}
+
+#home img {
+  max-width: 100%;
+  padding-top: 35vh;
+  margin: auto;
+}
+
+#about img {
+  max-width: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #091534;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar li {
+  float: left;
+  border-right: 1px solid #f3f3f3;
+}
+
+.navbar li a {
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #de354c;
+}
+
+.navbar li:last-child {
+  float: right;
+  border-right: none;
+}
+
+h2:after {
+  content: " ";
+  display: block;
+  margin: 0 25vw;
+  border: 1px solid #1440b8;
+  border-radius: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#contact h2 {
+  margin: 20px;
+}
+
+#contact {
+  padding-bottom: 30px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+
